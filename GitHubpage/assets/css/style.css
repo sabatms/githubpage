@@ -535,7 +535,7 @@ body {
 }
 
 .header:not(.search-active) .search-box,
-.header-search-active :where(.logo, .theme-btn),
+.header.search-active :where(.logo, .theme-btn),
 .search-toggler[aria-expanded="true"] .search-icon,
 .search-toggler[aria-expanded="false"] .close-icon,
 [data-theme="dark"] .theme-btn .moon-icon,
