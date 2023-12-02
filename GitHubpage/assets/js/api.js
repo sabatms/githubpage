@@ -1,8 +1,5 @@
-/**
- * @license MIT
- * @author codewithaarzoo <iaarzoo40@gmail.com>
- * @copyright codewithaarzoo 2023
- */
+import { fetchData } from "./api.js";
+import { numberToKilo } from "./module.js";
 
 
-'use strict';
+const 
