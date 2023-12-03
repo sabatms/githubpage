@@ -17,7 +17,7 @@
           <link rel="stylesheet"
                     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
           <link rel="stylesheet" href="./assets/css/style.css">
-          <script src="./assets/js/app.js"></script>
+          <script src="./assets/js/app.js" type="module"></script>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
 
   <a href="#main" class="skip-to-content">Skip to Content</a>
  
-  <header class="header active">
+  <header class="header" data-header>
    <div class="container">
       <a href="/" class="logo">
           <span class="text-primary">Git</span>Hub
@@ -35,6 +35,8 @@
          <button class="icon-btn search-toggler" 
          aria-controls="searchBox" aria-expanded="false"
          aria-label="Toggler search" data-search-toggler>
+         <span class="material-symbols-rounded 
+          search-icon" aria-hidden="true">search</span>
            <span class="material-symbols-rounded
            close-icon" aria-hidden="true">arrow_back</span>
          </button> 
@@ -64,6 +66,74 @@
 
    </div>
   </header>
+
+
+
+    <main class="main" id="main">
+       
+      <div class="container">
+           
+        <section class="profile" data-profile-card>
+            
+           <figure class="avatar-circle img-holder" style="--width: 280;
+           --height : 280">
+             
+             <img src="./assets/images/profile.png" width="280" height="280" alt="codewithsaba" class="img-cover">
+
+           </figure>
+
+           <h1 class="title-2">Saba</h1>
+           <p class="username text-primary">sabatms</p>
+           <p class="bio">Front-end developer</p>
+
+           <a href="#" target="_blank" class="btn btn-secondary" >
+              <span class="material-symbols-rounded"
+              aria-hidden="true">open_in_new</span>
+              <span class="span">See on GitHub</span>
+           </a>
+
+
+          <ul class="profile-meta">
+            <li class="meta-item">
+              <span class="material-symbols-rounded" aria-hidden="true">location_on</span>
+              <span class="meta-text">Iran, Tehran</span>
+            </li>
+
+            <li class="meta-item">
+              <span class="material-symbols-rounded" aria-hidden="true">apartment</span>
+              <span class="meta-text" >Snapp!</span>
+            </li>
+
+            <li class="meta-item">
+              <span class="material-symbols-rounded" aria-hidden="true">email</span>
+              <a href="#" target="_blank" class="meta-text">sabatahmasebiShz@gmail.com</a>
+            </li>
+
+          </ul>
+
+          <ul class="profile-stats">
+            <li class="stats-item">
+              <span class="body">18</span>Repos
+            </li>
+
+            <li class="stats-item">
+              <span class="body">2</span>Followers
+            </li>
+
+            <li class="stats-item">
+              <span class="body">8</span>following
+            </li>
+          </ul>
+
+          <div class="footer">
+            <p class="copyright">&copy; 2023 code with saba</p>
+          </div>
+
+          
+        </section>
+           
+      </div>
+    </main>
 
 
 </body>
