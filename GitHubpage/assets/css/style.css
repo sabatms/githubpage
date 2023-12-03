@@ -434,6 +434,7 @@ body {
 .btn{
   padding-inline: 24px;
   height: 24px;
+  line-height: 40px;
   font-size: var(--label-1);
   font-weight: var(--weight-medium);
   border-radius: var(--radius-8);
@@ -443,11 +444,31 @@ body {
   justify-content: center;
   gap: 8px;
   align-items: center;
-  line-height: 40px;
   transition: var(--transition-short);
 }
 
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--white);
+  border-color: var(--primary-outline);
+}
 
+.btn-primary:where(:hover, :focus-visible):not(:active){
+  background-color: var(--primary-hover);
+  border-color: var(--primary-outline-hover);
+}
+
+
+.btn-secondary{
+  background-color: var(--surface-1);
+  color: var(--primary);
+  border-color: var(--surface-1-outline);
+}
+
+.btn-secondary:where(:hover, :focus-visible):not(:active){
+  background-color: var(--surface-1-hover);
+  border-color: var(--surface-1-outline-hover);
+}
 
 /* Badge */
 
@@ -564,8 +585,67 @@ body {
   #PROFILE
 \*-----------------------------------*/
 
+.main{
+  flex-grow: 1;
+  scroll-margin-top: var(--header-height);
+}
+
+.profile{
+  margin-block-end: 24px;
+}
+
+.profile :where(.avatar-circle, .avatar-rounded){
+  width: 160px;
+
+}
+
+.profile .title-2{
+  margin-block-end: 16px 4px;
+}
+
+.username{
+  line-height: 20px;
+  margin-block-end: 12px;
+}
+
+.profile .bio {
+  margin-block: 12px;
+  max-width: 80ch;
+}
+
+.profile .btn-secondary{
+  max-width: 100%;
+}
+
+.profile-meta {
+  margin-block: 24px;
+}
 
 
+.profile-meta .meta-item ,
+.profile-stats .stats-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-block: 8px;
+}
+
+.profile-meta .meta-text {
+  font-size: var(--label-1);
+  min-width: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: var(--transition-short);
+}
+
+.profile-meta a.meta-text:where(:hover , :focus-visible):not(:active){
+  color: var(--primary);
+}
+
+.profile-stats .stats-item {
+  color: var(--on-surface-variant);
+}
 
 
 /*-----------------------------------*\
