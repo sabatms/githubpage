@@ -1,6 +1,3 @@
-/*@license MIT*/
-
-'use strict';
 const $HTML = document.documentElement;
 const isDark = window.matchMedia("(prefers-color-scheme:dark)").matches;
 
