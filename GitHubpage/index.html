@@ -74,7 +74,6 @@
       <div class="container">
            
         <section class="profile" data-profile-card>
-            
            <figure class="avatar-circle img-holder" style="--width: 280;
            --height : 280">
              
@@ -128,10 +127,94 @@
           <div class="footer">
             <p class="copyright">&copy; 2023 code with saba</p>
           </div>
+          
+          <!-- <div class="profile-skeleton">
+            <div class="skeleton avatar-skeleton"></div>
+            <div class="skeleton title-skeleton"></div>
+            <div class="skeleton text-skeleton text-1"></div>
+            <div class="skeleton text-skeleton text-2"></div>
+            <div class="skeleton text-skeleton text-3"></div>
+          </div> -->
 
           
         </section>
-           
+        
+         <section class="tab-container">
+          <div class="tab-list" aria-label="Tab navigation"
+          role="tablist">
+            <button class="tab-btn" aria-selected="true"
+            role="tab" id="tab-1" tabindex="0" aria-controls="panel-1"
+            data-tab-btn>Repositoried</button>
+
+            <button class="tab-btn" aria-selected="false"
+            role="tab" id="tab-2" tabindex="-1" aria-controls="panel-2"
+            data-tab-btn data-forked-tab-btn>Forked</button>
+
+            <button class="tab-btn" aria-selected="false"
+            role="tab" id="tab-3" tabindex="-1" aria-controls="panel-3"
+            data-tab-btn data-follower-tab-btn>Followers</button>
+
+            <button class="tab-btn" aria-selected="false"
+            role="tab" id="tab-4" tabindex="-1" aria-controls="panel-4"
+            data-tab-btn data-following-tab-btn>Following</button>
+          </div>
+
+          <div class="tab-panel" role="tabpanel" id="panel-1"
+          aria-labelledby="tab-1" tabindex="0" data-tab-panel
+          data-repo-panel>
+                    
+          <h2 class="sr-only">Repositories</h2> 
+
+            <article class="card repo-card">
+                <div class="card-body">
+                  <a href="#" target="_blank" class="card-title">
+                    <h3 class="title-3">GitHub Clone</h3>
+                  </a>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <span class="badge">Public</span>
+                </div>
+
+                <div class="card-footer">
+                  <div class="meta-item">
+                    <span class="material-symbols-rounded" aria-hidden="true">code_blocks</span>
+                    <span class="span">CSS</span>
+                  </div>
+
+
+                  <div class="meta-item">
+                    <span class="material-symbols-rounded" aria-hidden="true">star_rate</span>
+                    <span class="span">10</span>
+                  </div>
+
+                  <div class="meta-item">
+                    <span class="material-symbols-rounded" aria-hidden="true">family_history</span>
+                    <span class="span">4</span>
+                  </div>
+                </div>
+             </article>
+
+           <div class="card repo-skeleton">
+             <div class="card-body">
+              <div class="skeleton title-skeleton"></div>
+              <div class="skeleton text-skeleton text-1"></div>
+              <div class="skeleton text-skeleton text-2"></div>
+             </div>
+             <div class="card-footer">
+              <div class="skeleton text-skeleton"></div>
+              <div class="skeleton text-skeleton"></div>
+              <div class="skeleton text-skeleton"></div>
+             </div>
+            </div>
+
+           <div class="error-content">
+            <p class="title-1">Ooops! :(</p>
+            <p class="text">Dosen't have any public Repastories yet.</p>
+           </div>
+           </div>
+               
+         </section>
+
+
       </div>
     </main>
 
